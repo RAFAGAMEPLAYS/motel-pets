@@ -70,7 +70,7 @@ onMounted(carregarTutores);
         <label for="tutor" class="form-label">tutor</label>
         <select name="tutor" id="tutor" class="form-select" v-model="novoPet.tutorId">
           <option value="" disabled>selecione o tutor</option>
-          <option v-for="tutor in tutores" :key="tutor.id">{{ tutor.nome }}</option>
+          <option v-for="tutor in tutores" :key="tutor.id" :value="tutor.id">{{ tutor.nome }}</option>
         </select>
       </div>
       <div class="col-12 d-flex gap-2">
