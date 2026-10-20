@@ -13,16 +13,16 @@
   ],
   "pets": [
     {
+      "id": "1",
+      "nome": "Safira",
+      "especie": "Cachorro",
+      "tutorId": "1"
+    },
+    {
       "id": "2",
       "nome": "Nino",
       "especie": "Gato",
       "tutorId": "1"
-    },
-    {
-      "nome": "kauan",
-      "especie": "tintão",
-      "tutorId": "1",
-      "id": "09mc5yQFZL4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

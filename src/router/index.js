@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -15,28 +14,30 @@ const router = createRouter({
     },
     {
       path: '/pets/novo',
-      name: 'addPet',
-      component: () => import('../views/AddPetsView.vue'),
+      name: 'novo-pet',
+      component: () => import('../views/AddPetView.vue'),
     },
-     {
+    {
       path: '/pets/:id',
       name: 'detalhes-pet',
       component: () => import('../views/PetDetailsView.vue'),
     },
-     {
+
+    // Rotas para tutores
+    {
       path: '/tutores',
       name: 'tutores',
       component: () => import('../views/TutorView.vue'),
     },
-      {
-      path: '/tutores/details/:id',
-      name: 'tutores-detalhes',
-      component: () => import('../views/TutorDetailsView.vue'),
-    },
      {
       path: '/tutores/novo',
-      name: 'tutores-new',
+      name: 'novo-tutor',
       component: () => import('../views/addTutorView.vue'),
+    },
+    {
+      path: '/tutores/:id',
+      name: 'detalhes-tutor',
+      component: () => import('../views/TutorDetailsView.vue'),
     },
   ],
 });
